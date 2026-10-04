@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "WebWeaver Recorder",
+  "version": "0.0.0",
+  "description": "Records web interactions (clicks, inputs, navigation) as a deterministic recording.json.",
+  "minimum_chrome_version": "116",
+  "action": {
+    "default_title": "WebWeaver Recorder",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["storage", "webNavigation", "scripting", "downloads"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
+}

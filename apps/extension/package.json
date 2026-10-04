@@ -1,0 +1,15 @@
+{
+  "name": "@webweaver/extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "WebWeaver Chrome (Manifest V3) recorder extension.",
+  "type": "module",
+  "scripts": {
+    "build": "vite build && vite build --config vite.content.config.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@webweaver/core": "workspace:*",
+    "@webweaver/workflow-schema": "workspace:*"
+  }
+}

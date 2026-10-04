@@ -1,0 +1,148 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #1f2328;
+  --muted: #656d76;
+  --border: #d0d7de;
+  --primary: #0969da;
+  --danger: #cf222e;
+  --recording: #cf222e;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+  font-size: 13px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8d96a0;
+    --border: #30363d;
+    --primary: #2f81f7;
+    --danger: #f85149;
+    --recording: #f85149;
+  }
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  padding: 12px 14px 14px;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.status::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--muted);
+}
+
+.status[data-state='recording'] {
+  color: var(--recording);
+}
+
+.status[data-state='recording']::before {
+  background: var(--recording);
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.detail {
+  margin: 10px 0;
+  color: var(--muted);
+  white-space: pre-line;
+  word-break: break-all;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+button {
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--fg);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+button.primary:not(:disabled) {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: #ffffff;
+}
+
+button.danger:not(:disabled) {
+  border-color: var(--danger);
+  background: var(--danger);
+  color: #ffffff;
+}
+
+button.secondary {
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.actions {
+  margin: 10px 0 0;
+  padding: 8px 8px 8px 28px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+}
+
+.actions li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.error {
+  margin: 10px 0 0;
+  color: var(--danger);
+}

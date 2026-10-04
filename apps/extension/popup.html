@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebWeaver</title>
+    <link rel="stylesheet" href="./src/popup/popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>WebWeaver</h1>
+      <span id="status" class="status" data-state="idle">Idle</span>
+    </header>
+
+    <p id="detail" class="detail"></p>
+
+    <div class="controls">
+      <button id="start" type="button" class="primary">Start Recording</button>
+      <button id="stop" type="button" class="danger" disabled>Stop Recording</button>
+    </div>
+
+    <ol id="actions" class="actions" hidden></ol>
+
+    <button id="download" type="button" class="secondary" disabled>Download last recording</button>
+
+    <p id="error" class="error" role="alert" hidden></p>
+
+    <script type="module" src="./src/popup/main.ts"></script>
+  </body>
+</html>

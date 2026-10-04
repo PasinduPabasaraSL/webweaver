@@ -1,0 +1,8 @@
+node_modules/
+dist/
+coverage/
+tests/e2e/.output/
+*.log
+.DS_Store
+recording*.json
+!examples/**/*.json

@@ -1,0 +1,320 @@
+{
+  "version": "1.0",
+  "workflow": {
+    "id": "8e291cf6-cc19-49c1-9dc0-bebff0704642",
+    "name": "Recording of 127.0.0.1",
+    "createdAt": "2026-10-04T07:23:21.648Z",
+    "endedAt": "2026-10-04T07:23:24.787Z",
+    "startUrl": "http://127.0.0.1:8080/login?session_token={{API_TOKEN}}"
+  },
+  "recorder": {
+    "name": "webweaver-extension",
+    "version": "0.1.0",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36"
+  },
+  "actions": [
+    {
+      "id": "action-001",
+      "type": "navigate",
+      "trigger": "initial",
+      "timestamp": "2026-10-04T07:23:21.648Z",
+      "url": "http://127.0.0.1:8080/login?session_token={{API_TOKEN}}",
+      "title": "Login"
+    },
+    {
+      "id": "action-002",
+      "type": "click",
+      "timestamp": "2026-10-04T07:23:23.794Z",
+      "url": "http://127.0.0.1:8080/login?session_token={{API_TOKEN}}",
+      "title": "Login",
+      "modifiers": {
+        "alt": false,
+        "ctrl": false,
+        "meta": false,
+        "shift": false
+      },
+      "target": {
+        "element": {
+          "tagName": "input",
+          "id": "username",
+          "name": "username",
+          "label": "Username",
+          "role": "textbox",
+          "classes": [],
+          "ariaAttributes": {},
+          "dataAttributes": {},
+          "attributes": {
+            "autocomplete": "username",
+            "name": "username"
+          },
+          "cssSelector": "#username",
+          "xpath": "/html/body/main/form/input[1]",
+          "parentPath": "html > body > main#app > form#login-form",
+          "boundingBox": {
+            "x": 77,
+            "y": 8,
+            "width": 158,
+            "height": 21
+          },
+          "outerHTML": "<input id=\"username\" name=\"username\" autocomplete=\"username\">"
+        }
+      }
+    },
+    {
+      "id": "action-003",
+      "type": "input",
+      "timestamp": "2026-10-04T07:23:23.800Z",
+      "url": "http://127.0.0.1:8080/login?session_token={{API_TOKEN}}",
+      "title": "Login",
+      "value": "alice",
+      "target": {
+        "element": {
+          "tagName": "input",
+          "id": "username",
+          "name": "username",
+          "value": "alice",
+          "label": "Username",
+          "role": "textbox",
+          "classes": [],
+          "ariaAttributes": {},
+          "dataAttributes": {},
+          "attributes": {
+            "autocomplete": "username",
+            "name": "username"
+          },
+          "cssSelector": "#username",
+          "xpath": "/html/body/main/form/input[1]",
+          "parentPath": "html > body > main#app > form#login-form",
+          "boundingBox": {
+            "x": 77,
+            "y": 8,
+            "width": 158,
+            "height": 21
+          },
+          "outerHTML": "<input id=\"username\" name=\"username\" autocomplete=\"username\">"
+        }
+      }
+    },
+    {
+      "id": "action-004",
+      "type": "click",
+      "timestamp": "2026-10-04T07:23:23.826Z",
+      "url": "http://127.0.0.1:8080/login?session_token={{API_TOKEN}}",
+      "title": "Login",
+      "modifiers": {
+        "alt": false,
+        "ctrl": false,
+        "meta": false,
+        "shift": false
+      },
+      "target": {
+        "element": {
+          "tagName": "input",
+          "id": "password",
+          "type": "password",
+          "name": "password",
+          "value": "{{PASSWORD}}",
+          "label": "Password",
+          "classes": [],
+          "ariaAttributes": {},
+          "dataAttributes": {},
+          "attributes": {
+            "name": "password",
+            "type": "password"
+          },
+          "cssSelector": "#password",
+          "xpath": "/html/body/main/form/input[2]",
+          "parentPath": "html > body > main#app > form#login-form",
+          "boundingBox": {
+            "x": 304,
+            "y": 8,
+            "width": 158,
+            "height": 21
+          },
+          "outerHTML": "<input id=\"password\" name=\"password\" type=\"password\">",
+          "redacted": true
+        }
+      }
+    },
+    {
+      "id": "action-005",
+      "type": "input",
+      "timestamp": "2026-10-04T07:23:23.828Z",
+      "url": "http://127.0.0.1:8080/login?session_token={{API_TOKEN}}",
+      "title": "Login",
+      "value": "{{PASSWORD}}",
+      "redaction": {
+        "variable": "PASSWORD",
+        "reason": "input type is \"password\""
+      },
+      "target": {
+        "element": {
+          "tagName": "input",
+          "id": "password",
+          "type": "password",
+          "name": "password",
+          "value": "{{PASSWORD}}",
+          "label": "Password",
+          "classes": [],
+          "ariaAttributes": {},
+          "dataAttributes": {},
+          "attributes": {
+            "name": "password",
+            "type": "password"
+          },
+          "cssSelector": "#password",
+          "xpath": "/html/body/main/form/input[2]",
+          "parentPath": "html > body > main#app > form#login-form",
+          "boundingBox": {
+            "x": 304,
+            "y": 8,
+            "width": 158,
+            "height": 21
+          },
+          "outerHTML": "<input id=\"password\" name=\"password\" type=\"password\">",
+          "redacted": true
+        }
+      }
+    },
+    {
+      "id": "action-006",
+      "type": "click",
+      "timestamp": "2026-10-04T07:23:23.858Z",
+      "url": "http://127.0.0.1:8080/login?session_token={{API_TOKEN}}",
+      "title": "Login",
+      "modifiers": {
+        "alt": false,
+        "ctrl": false,
+        "meta": false,
+        "shift": false
+      },
+      "target": {
+        "element": {
+          "tagName": "button",
+          "id": "login",
+          "type": "submit",
+          "text": "Log in",
+          "role": "button",
+          "classes": [],
+          "ariaAttributes": {},
+          "dataAttributes": {
+            "data-testid": "login-button"
+          },
+          "attributes": {
+            "type": "submit"
+          },
+          "cssSelector": "#login",
+          "xpath": "/html/body/main/form/button",
+          "parentPath": "html > body > main#app > form#login-form",
+          "boundingBox": {
+            "x": 466,
+            "y": 8,
+            "width": 52,
+            "height": 21
+          },
+          "outerHTML": "<button id=\"login\" data-testid=\"login-button\" type=\"submit\"><span>Log in</span></button>"
+        }
+      }
+    },
+    {
+      "id": "action-007",
+      "type": "navigate",
+      "trigger": "form_submit",
+      "timestamp": "2026-10-04T07:23:23.894Z",
+      "url": "http://127.0.0.1:8080/dashboard",
+      "title": "Dashboard"
+    },
+    {
+      "id": "action-008",
+      "type": "click",
+      "timestamp": "2026-10-04T07:23:24.332Z",
+      "url": "http://127.0.0.1:8080/dashboard",
+      "title": "Dashboard",
+      "modifiers": {
+        "alt": false,
+        "ctrl": false,
+        "meta": false,
+        "shift": false
+      },
+      "target": {
+        "element": {
+          "tagName": "button",
+          "id": "settings",
+          "type": "button",
+          "text": "Open settings",
+          "role": "button",
+          "classes": [],
+          "ariaAttributes": {},
+          "dataAttributes": {},
+          "attributes": {
+            "onclick": "history.pushState({}, '', '/dashboard/settings')",
+            "type": "button"
+          },
+          "cssSelector": "#settings",
+          "xpath": "/html/body/button",
+          "parentPath": "html > body",
+          "boundingBox": {
+            "x": 8,
+            "y": 26,
+            "width": 98,
+            "height": 21
+          },
+          "outerHTML": "<button id=\"settings\" type=\"button\" onclick=\"history.pushState({}, '', '/dashboard/settings')\">Open settings</button>"
+        }
+      }
+    },
+    {
+      "id": "action-009",
+      "type": "navigate",
+      "trigger": "history_api",
+      "timestamp": "2026-10-04T07:23:24.336Z",
+      "url": "http://127.0.0.1:8080/dashboard/settings",
+      "title": ""
+    },
+    {
+      "id": "action-010",
+      "type": "click",
+      "timestamp": "2026-10-04T07:23:24.361Z",
+      "url": "http://127.0.0.1:8080/dashboard/settings",
+      "title": "Dashboard",
+      "modifiers": {
+        "alt": false,
+        "ctrl": false,
+        "meta": false,
+        "shift": false
+      },
+      "target": {
+        "element": {
+          "tagName": "a",
+          "id": "reports",
+          "text": "Reports",
+          "role": "link",
+          "classes": [],
+          "ariaAttributes": {},
+          "dataAttributes": {},
+          "attributes": {
+            "href": "/reports"
+          },
+          "cssSelector": "#reports",
+          "xpath": "/html/body/nav/a",
+          "parentPath": "html > body > nav",
+          "boundingBox": {
+            "x": 8,
+            "y": 8,
+            "width": 50,
+            "height": 17
+          },
+          "outerHTML": "<a id=\"reports\" href=\"/reports\">Reports</a>"
+        }
+      }
+    },
+    {
+      "id": "action-011",
+      "type": "navigate",
+      "trigger": "link",
+      "timestamp": "2026-10-04T07:23:24.376Z",
+      "url": "http://127.0.0.1:8080/reports",
+      "title": "Reports"
+    }
+  ]
+}
